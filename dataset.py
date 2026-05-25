@@ -5,7 +5,6 @@ from sklearn.preprocessing import StandardScaler
 
 
 def create_notebook_dataset():
-    """Create the base split exactly as it is used in the notebook."""
     x, y = make_classification(
         n_samples=500,
         n_features=2,
@@ -29,7 +28,6 @@ def create_notebook_dataset():
 
 
 def create_standardized_dataset():
-    """Create the base split with train-only Z-score scaling required by the task."""
     x, y = make_classification(
         n_samples=500,
         n_features=2,
